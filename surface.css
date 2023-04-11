@@ -1,0 +1,137 @@
+/* pour l'esthétique du corps, des liens et du texte principal */
+     html {
+      background: linear-gradient(rgb(255,245,226), rgb(208,180,157)) fixed;
+     }
+
+    body{
+      background-color: #ffcfa7;
+      margin: 0px auto;
+      margin-top: 20px;
+      padding: 10px;
+      box-shadow: rgb(93, 85, 78) 0px -3px 5px;
+
+      font-family: maiandra GD, reem kufi, cursive;
+      line-height: 1.5;
+    }
+
+    a {
+      font-style: normal;
+      text-decoration: none;
+      color: rgb(35, 35, 35);
+      text-shadow: rgba(230, 90, 60, 0.8) 0px 0px 2px, rgba(90, 30, 30, 0.5) -1px -1px 1px;
+    }
+    a:hover {
+      color: rgb(230, 30, 30);
+    }
+
+    /* pour l'entete de presentation */
+    header img {
+      width: 30%;
+      max-width: 240px;
+      float: right;
+      box-shadow: rgba(50, 50, 93, 0.25) -6px 4px 15px -2px, rgba(0, 0, 0, 0.3) -3px 2px 7px -3px;
+    }
+
+    h1 {
+      clear: right;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    /* pour les différentes sections de textes */
+    main {
+      padding: 30px;
+    }
+    
+    ul {
+      margin-left: 0px;
+      padding-left: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      border-top: solid 2px rgb(97, 77, 38);
+      border-bottom: solid 2px rgb(97, 77, 38);
+      font-weight: 500;
+    }
+
+    .defaut h2 {
+      background-color: rgb(250, 180, 120);
+    }
+
+    .speciale h2 {
+      background-color: rgb(230, 90, 60);
+    }
+
+    /* Pour chaque figure correspondant à une rubrique ou une sous-rubrique d'images */
+    figure {
+      font-size: 0.75rem;
+      font-family: Lucida sans typewriter, Lucidatypewriter, monospace;
+
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    main section > figure {
+      text-align: center;
+      border: 1px none black;
+      border-bottom: solid;
+      border-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(97, 77, 38, 0.8), rgba(0, 0, 0, 0)) 1;
+      
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    main img {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    main section > figure > figcaption {
+      margin-bottom: 15px;
+    }
+
+    /* Pour chaque figure correspondant à une sous-rubrique d'images */
+    figure > figure {
+      text-align: center;
+      font-style: italic;
+      padding: 0px;
+    }
+    figure > figure:hover {
+      background-color: #ffd6b4;
+    }
+    figure > figure img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 80% !important;
+    }
+
+    /* responsive pour l'aeration de la page, et sur la taille des images dans les rubriques (et non sur celles des sous-rubriques) */
+    @media (max-width: 1200px) {
+      body {
+        width: 80%;
+      }
+      main img {
+        width: 41%;
+      }
+
+    }
+    @media (min-width: 1200px) {
+      body {
+        width: 960px;
+      }
+      main img {
+        width: 377px;
+      }
+    }
+    @media (max-width: 650px) {
+      body {
+        width: 100%;
+      }
+      
+      main img {
+        width: 80%;
+      }
+    }
